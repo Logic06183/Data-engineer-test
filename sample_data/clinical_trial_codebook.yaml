@@ -1,0 +1,40 @@
+patient_id:
+  codebook_name: subject_id
+  datatype: string
+  description: "Unique participant identifier"
+visit_date:
+  codebook_name: visit_date
+  datatype: date
+  description: "Date of clinical visit"
+age:
+  codebook_name: age_years
+  datatype: integer
+  units: years
+  description: "Age of participant"
+sex:
+  codebook_name: sex
+  datatype: string
+  description: "Biological sex (M/F)"
+arm:
+  codebook_name: study_arm
+  datatype: string
+  description: "Randomization arm"
+temperature_c:
+  codebook_name: body_temp
+  datatype: float
+  units: Celsius
+  description: "Body temperature"
+systolic_bp:
+  codebook_name: systolic_bp
+  datatype: integer
+  units: mmHg
+  description: "Systolic blood pressure"
+diastolic_bp:
+  codebook_name: diastolic_bp
+  datatype: integer
+  units: mmHg
+  description: "Diastolic blood pressure"
+adverse_event:
+  codebook_name: adverse_event
+  datatype: string
+  description: "Any adverse event reported? (Yes/No)"

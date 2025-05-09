@@ -1,0 +1,5 @@
+site_id,year,mean_temp_c,precip_mm,ndvi,land_cover_type
+A001,2020,22.5,870,0.72,Grassland
+A001,2021,23.1,910,0.75,Grassland
+B002,2020,16.2,1120,0.60,Forest
+B002,2021,15.8,1050,0.58,Forest

@@ -1,0 +1,5 @@
+patient_id,visit_date,age,sex,arm,temperature_c,systolic_bp,diastolic_bp,adverse_event
+1001,2023-01-10,34,F,Placebo,36.8,120,78,No
+1002,2023-01-10,57,M,Treatment,37.1,135,85,No
+1003,2023-01-12,45,F,Treatment,38.2,142,90,Yes
+1004,2023-01-13,29,M,Placebo,36.5,118,76,No

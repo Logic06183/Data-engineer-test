@@ -1,0 +1,26 @@
+site_id:
+  codebook_name: site_identifier
+  datatype: string
+  description: "Unique site code"
+year:
+  codebook_name: year
+  datatype: integer
+  description: "Calendar year"
+mean_temp_c:
+  codebook_name: mean_annual_temp
+  datatype: float
+  units: Celsius
+  description: "Mean annual temperature"
+precip_mm:
+  codebook_name: annual_precipitation
+  datatype: float
+  units: mm
+  description: "Total annual precipitation"
+ndvi:
+  codebook_name: ndvi
+  datatype: float
+  description: "Normalized Difference Vegetation Index"
+land_cover_type:
+  codebook_name: land_cover
+  datatype: string
+  description: "Dominant land cover type"
