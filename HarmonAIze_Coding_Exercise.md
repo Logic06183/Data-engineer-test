@@ -26,9 +26,14 @@ Demonstrate your backend data engineering capability by building a small feature
     - How to run your code,
     - Any assumptions or mock data you created.
 8. **Push your changes** to your forked repo on GitHub.
-9. **Submit your assignment** by sending the link to your fork/branch to Craig Parker at [craig.parker@witsphr.org](mailto:craig.parker@witsphr.org).
+9. **Submit your assignment** by sending the link to your fork/branch to Nicholas Brink ([Nicholas.Brink@witsphr.org](mailto:Nicholas.Brink@witsphr.org)) and Natasha Lalloo ([Natasha.Lalloo@witsphr.org](mailto:Natasha.Lalloo@witsphr.org)).
 
-If you have any questions or need clarification, please reach out to Craig directly.
+A `README.md` is required in your solution folder/branch. It should:
+- Explain which feature you built
+- How to run your code
+- Any assumptions or mock data you created
+
+If you have any technical questions or need help, please reach out to Craig Parker ([craig.parker@witsphr.org](mailto:craig.parker@witsphr.org)).
 
 ---
 
