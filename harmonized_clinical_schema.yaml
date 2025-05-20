@@ -1,0 +1,99 @@
+# Harmonized Clinical Trial Schema
+# This schema serves as the common mapping target for both clinical trial datasets
+
+fields:
+  # Patient/Subject Identifier
+  participant_id:
+    description: "Unique participant identifier"
+    datatype: string
+    required: true
+    source_mappings:
+      clinical_trial: patient_id
+      clinical_trial_2: subject_id
+
+  # Visit Information
+  visit_date:
+    description: "Date of clinical visit"
+    datatype: date
+    format: "YYYY-MM-DD"
+    required: true
+    source_mappings:
+      clinical_trial: visit_date
+      clinical_trial_2: visit_date
+
+  # Location Information
+  location_id:
+    description: "Clinical site location identifier"
+    datatype: string
+    required: true
+    source_mappings:
+      clinical_trial: site_location
+      clinical_trial_2: center_id
+
+  # Demographic Information
+  age:
+    description: "Age of participant"
+    datatype: integer
+    units: years
+    source_mappings:
+      clinical_trial: age
+      clinical_trial_2: age_years
+
+  sex:
+    description: "Biological sex"
+    datatype: string
+    allowed_values: ["Male", "Female", "Other", "Unknown"]
+    transformations:
+      clinical_trial:
+        "M": "Male"
+        "F": "Female"
+      clinical_trial_2: null  # Already in correct format
+    source_mappings:
+      clinical_trial: sex
+      clinical_trial_2: sex
+
+  # Study Group Information
+  study_group:
+    description: "Study group or arm assignment"
+    datatype: string
+    source_mappings:
+      clinical_trial: arm
+      clinical_trial_2: trial_group
+    transformations:
+      clinical_trial_2:
+        "Control": "Placebo"
+        "Treatment": "Treatment"
+
+  # Clinical Measurements
+  body_temperature:
+    description: "Body temperature"
+    datatype: float
+    units: Celsius
+    source_mappings:
+      clinical_trial: temperature_c
+      clinical_trial_2: null  # Not available in dataset 2
+
+  systolic_bp:
+    description: "Systolic blood pressure"
+    datatype: integer
+    units: mmHg
+    source_mappings:
+      clinical_trial: systolic_bp
+      clinical_trial_2: null  # Not available in dataset 2
+
+  diastolic_bp:
+    description: "Diastolic blood pressure"
+    datatype: integer
+    units: mmHg
+    source_mappings:
+      clinical_trial: diastolic_bp
+      clinical_trial_2: null  # Not available in dataset 2
+
+  # Outcome Information
+  adverse_event:
+    description: "Whether an adverse event occurred"
+    datatype: string
+    allowed_values: ["Yes", "No"]
+    source_mappings:
+      clinical_trial: adverse_event
+      clinical_trial_2: adverse_event

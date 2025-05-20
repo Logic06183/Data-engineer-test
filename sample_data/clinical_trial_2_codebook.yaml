@@ -1,0 +1,19 @@
+fields:
+  subject_id:
+    description: Unique subject identifier
+    map_to: participant_id
+  visit_date:
+    description: Date of clinical visit
+    map_to: date
+  age_years:
+    description: Age of participant in years
+    map_to: age
+  sex:
+    description: Biological sex
+    map_to: gender
+  trial_group:
+    description: Study group assignment
+    map_to: group
+  adverse_event:
+    description: Whether an adverse event occurred
+    map_to: adverse_event 
