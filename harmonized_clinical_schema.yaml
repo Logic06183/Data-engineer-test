@@ -1,5 +1,5 @@
-# Harmonized Clinical Trial Schema
-# This schema serves as the common mapping target for both clinical trial datasets
+# Harmonized Clinical and Environmental Data Schema
+# This schema serves as the common mapping target for clinical trial and climate datasets
 
 fields:
   # Patient/Subject Identifier
@@ -97,3 +97,39 @@ fields:
     source_mappings:
       clinical_trial: adverse_event
       clinical_trial_2: adverse_event
+      
+  # Climate Data
+  temperature:
+    description: "Daily mean temperature"
+    datatype: float
+    units: Celsius
+    source_mappings:
+      climate_daily: daily_temp_c
+      clinical_trial: null
+      clinical_trial_2: null
+      
+  precipitation:
+    description: "Daily precipitation"
+    datatype: float
+    units: mm
+    source_mappings:
+      climate_daily: precip_mm
+      clinical_trial: null
+      clinical_trial_2: null
+      
+  humidity:
+    description: "Daily mean relative humidity"
+    datatype: float
+    units: percent
+    source_mappings:
+      climate_daily: humidity_pct
+      clinical_trial: null
+      clinical_trial_2: null
+      
+  air_quality_index:
+    description: "Air Quality Index value"
+    datatype: integer
+    source_mappings:
+      climate_daily: aqi
+      clinical_trial: null
+      clinical_trial_2: null

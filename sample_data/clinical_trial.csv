@@ -1,5 +1,7 @@
-patient_id,visit_date,age,sex,arm,temperature_c,systolic_bp,diastolic_bp,adverse_event
-1001,2023-01-10,34,F,Placebo,36.8,120,78,No
-1002,2023-01-10,57,M,Treatment,37.1,135,85,No
-1003,2023-01-12,45,F,Treatment,38.2,142,90,Yes
-1004,2023-01-13,29,M,Placebo,36.5,118,76,No
+patient_id,visit_date,age,sex,arm,temperature_c,systolic_bp,diastolic_bp,adverse_event,site_location
+1001,2023-01-10,34,F,Placebo,36.8,120,78,No,NYC-01
+1002,2023-01-10,57,M,Treatment,37.1,135,85,No,BOS-02
+1003,2023-01-12,45,F,Treatment,38.2,142,90,Yes,CHI-03
+1004,2023-01-13,29,M,Placebo,36.5,118,76,No,NYC-01
+1005,2023-01-15,42,F,Treatment,37.0,125,80,No,SF-04
+1006,2023-01-18,51,M,Placebo,36.9,130,82,No,BOS-02

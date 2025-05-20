@@ -1,0 +1,31 @@
+site_id:
+  codebook_name: site_code
+  datatype: string
+  description: "Climate monitoring site identifier"
+date:
+  codebook_name: observation_date
+  datatype: date
+  description: "Date of climate observation"
+daily_temp_c:
+  codebook_name: temperature
+  datatype: float
+  units: Celsius
+  description: "Daily mean temperature"
+precip_mm:
+  codebook_name: precipitation
+  datatype: float
+  units: mm
+  description: "Daily precipitation amount"
+humidity_pct:
+  codebook_name: humidity
+  datatype: float
+  units: percent
+  description: "Daily mean relative humidity"
+aqi:
+  codebook_name: air_quality_index
+  datatype: integer
+  description: "Air Quality Index value (0-500 scale)"
+location_id:
+  codebook_name: location_id
+  datatype: string
+  description: "Clinical site location identifier for joining with clinical data"

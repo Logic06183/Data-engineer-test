@@ -16,4 +16,7 @@ fields:
     map_to: group
   adverse_event:
     description: Whether an adverse event occurred
-    map_to: adverse_event 
+    map_to: adverse_event
+  center_id:
+    description: Clinical center identifier
+    map_to: location_id

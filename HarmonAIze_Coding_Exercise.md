@@ -1,7 +1,7 @@
 # 🧪 HarmonAIze Data Engineering Mini-Task
 
 ## Goal
-Create a Django-based data harmonization system that can ingest clinical trial data from different sources with varying schemas and store it in a standardized format in a database.
+Create a Django-based data harmonization system that can ingest and integrate clinical trial data and environmental data from different sources with varying schemas, and store it in a standardized format in a database.
 
 ## Detailed Task Description
 
@@ -16,8 +16,10 @@ You will build a Django management command that:
 
 #### Data Harmonization
 - Two different clinical trial datasets with different column names and structures need to be mapped to a single harmonized schema
-- Use the provided `harmonized_clinical_schema.yaml` as the target schema for both datasets
+- Additionally, climate data needs to be integrated with the clinical trial data
+- Use the provided `harmonized_clinical_schema.yaml` as the target schema for all datasets
 - This schema defines how fields from each source dataset should be mapped to the common model
+- The datasets should be joined using location identifiers and dates
 
 #### Django Components
 1. **Create a Django Model**:

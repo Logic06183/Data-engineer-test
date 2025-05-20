@@ -38,3 +38,7 @@ adverse_event:
   codebook_name: adverse_event
   datatype: string
   description: "Any adverse event reported? (Yes/No)"
+site_location:
+  codebook_name: location_id
+  datatype: string
+  description: "Clinical site location identifier"
