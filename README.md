@@ -17,7 +17,9 @@ Full instructions and details are provided in `HarmonAIze_Coding_Exercise.md` (s
 
 ## Submission
 
-- Submit your solution by sending your repo link to Nicholas Brink (Nicholas.Brink@witsphr.org) and Natasha Lalloo (Natasha.Lalloo@witsphr.org).
+- Submit your solution by creating a pull request to this repository.
+- After creating your pull request, please send the PR link to Nicholas Brink (Nicholas.Brink@witsphr.org) and Natasha Lalloo (Natasha.Lalloo@witsphr.org).
+- Include your name and contact information in the PR description.
 - For technical help, contact Craig Parker (craig.parker@witsphr.org).
 
 ## Questions?

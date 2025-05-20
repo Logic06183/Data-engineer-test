@@ -46,21 +46,28 @@ You will build a Django management command that:
 
 ## Sample Data Description
 
-### Dataset 1
+### Dataset 1: Clinical Trial
 - File: `/sample_data/clinical_trial.csv`
 - Codebook: `/sample_data/clinical_trial_codebook.yaml`
-- Contains: patient ID, visit date, demographics, vital signs, and adverse events
+- Contains: patient ID, visit date, demographics, vital signs, adverse events, and site location
 
-### Dataset 2
+### Dataset 2: Clinical Trial 2
 - File: `/sample_data/clinical_trial_2.csv`
 - Codebook: `/sample_data/clinical_trial_2_codebook.yaml`
-- Contains: subject ID, visit date, demographics, study group, and adverse events
+- Contains: subject ID, visit date, demographics, study group, adverse events, and center ID
 - Note: Does not include vital signs data
+
+### Dataset 3: Climate Data
+- File: `/sample_data/climate_daily.csv`
+- Codebook: `/sample_data/climate_daily_codebook.yaml`
+- Contains: site ID, date, temperature, precipitation, humidity, air quality, and location ID
+- Note: Contains environmental data that can be joined with clinical datasets
 
 ### Harmonized Schema
 - File: `/harmonized_clinical_schema.yaml`
-- Defines the common fields and mapping rules for both datasets
+- Defines the common fields and mapping rules for all datasets
 - Includes transformation rules where needed
+- Provides a unified schema for clinical and environmental data
 
 ---
 
@@ -87,6 +94,12 @@ You will build a Django management command that:
 - Proper implementation of data mapping and transformation
 - Error handling and validation
 - Documentation clarity
+
+## Submission Instructions
+- Fork this repository and implement your solution
+- Create a pull request (PR) when you're ready to submit
+- Include your name and contact information in the PR description
+- Send the PR link to Nicholas Brink (Nicholas.Brink@witsphr.org) and Natasha Lalloo (Natasha.Lalloo@witsphr.org)
 
 **Estimated time:** ~3 hours  
 **Questions?** Contact Craig Parker (craig.parker@witsphr.org)
