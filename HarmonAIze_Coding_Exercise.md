@@ -1,21 +1,21 @@
 # 🧪 HarmonAIze Data Engineering Mini-Task
 
 ## Goal
-Create a Django-based data harmonization system that can ingest and integrate clinical trial data and environmental data from different sources with varying schemas, and store it in a standardized format in a database.
+Create a Django-based data harmonisation system that can ingest and integrate clinical trial data and environmental data from different sources with varying schemas, and store it in a standardised format in a database.
 
 ## Detailed Task Description
 
 ### Overview
 You will build a Django management command that:
 1. Takes CSV data files and their corresponding YAML codebooks as input
-2. Maps the data from different schemas to a common harmonized schema
+2. Maps the data from different schemas to a common harmonised schema
 3. Loads the transformed data into a Django model
 4. Provides a summary of the ingestion process
 
 ### Specific Requirements
 
-#### Data Harmonization
-- Two different clinical trial datasets with different column names and structures need to be mapped to a single harmonized schema
+#### Data Harmonisation
+- Two different clinical trial datasets with different column names and structures need to be mapped to a single harmonised schema
 - Additionally, climate data needs to be integrated with the clinical trial data
 - Use the provided `harmonized_clinical_schema.yaml` as the target schema for all datasets
 - This schema defines how fields from each source dataset should be mapped to the common model
@@ -63,7 +63,7 @@ You will build a Django management command that:
 - Contains: site ID, date, temperature, precipitation, humidity, air quality, and location ID
 - Note: Contains environmental data that can be joined with clinical datasets
 
-### Harmonized Schema
+### Harmonised Schema
 - File: `/harmonized_clinical_schema.yaml`
 - Defines the common fields and mapping rules for all datasets
 - Includes transformation rules where needed
@@ -90,7 +90,7 @@ You will build a Django management command that:
 ---
 
 ## Evaluation Criteria
-- Code quality and organization
+- Code quality and organisation
 - Proper implementation of data mapping and transformation
 - Error handling and validation
 - Documentation clarity

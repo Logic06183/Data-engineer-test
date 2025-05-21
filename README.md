@@ -4,7 +4,7 @@ Welcome! This repository contains the technical assessment for backend data engi
 
 ## Overview
 
-This exercise should take about **three hours** to complete. You will build a Django-based backend feature that harmonizes structured data (CSV/YAML) and loads it into a PostgreSQL database using Django models. The exercise tests your skills in schema design, data mapping, and Python backend engineering.
+This exercise should take about **three hours** to complete. You will build a Django-based backend feature that harmonises structured data (CSV/YAML) and loads it into a PostgreSQL database using Django models. The exercise tests your skills in schema design, data mapping, and Python backend engineering.
 
 Full instructions and details are provided in `HarmonAIze_Coding_Exercise.md` (sometimes referred to as the lockdown MD file).
 
@@ -13,7 +13,7 @@ Full instructions and details are provided in `HarmonAIze_Coding_Exercise.md` (s
 1. **Read the full exercise instructions in `HarmonAIze_Coding_Exercise.md`.**
 2. Use the provided `/sample_data/` directory for example data and codebooks.
 3. Follow the step-by-step checklist in the exercise document.
-4. Your main deliverable is a Django-based backend feature that demonstrates data harmonization, ingestion, and schema design.
+4. Your main deliverable is a Django-based backend feature that demonstrates data harmonisation, ingestion, and schema design.
 
 ## Submission
 
