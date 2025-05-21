@@ -94,6 +94,8 @@ You will build a Django management command that:
 - Proper implementation of data mapping and transformation
 - Error handling and validation
 - Documentation clarity
+- Use of Github, 
+- Grasp of Django
 
 ## Submission Instructions
 - Fork this repository and implement your solution
