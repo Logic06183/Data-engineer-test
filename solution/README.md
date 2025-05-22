@@ -22,7 +22,13 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 > **Note**: be sure to have python installed on system running project
 
-### 3. Install dependencies
+### 3. Navigate to project folder
+
+```bash
+cd solution
+```
+
+### 4. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -31,13 +37,7 @@ pip install -r requirements.txt
 > **Note**: Rename `test.env` to `.env` and ensure PostgreSQL is running with credentials set correctly. If the `USE_POSTGRES` variable is set to `False`, the system will default to using a SQLite database.
 
 
-### 4. Navigate to project folder
-
-```bash
-cd solution
-```
-
-### 4. Apply database migrations
+### 5. Apply database migrations
 
 ```bash
 python manage.py migrate

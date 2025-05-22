@@ -90,7 +90,6 @@ class Command(BaseCommand):
                             or row.get('center_id')
                         )
                         location_id = raw_loc if raw_loc else None
-                        self.stdout.write(f"✅ row: {location_id}")
 
                     if visit_date is None:
                         raw_date = row.get('visit_date') or row.get('date')
