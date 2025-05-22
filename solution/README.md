@@ -9,7 +9,7 @@ A Django-based data harmonisation tool to ingest clinical and environmental data
 ### 1. Clone the repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/tinashechiraya/Data-engineer-test.git
 cd <repo-directory>
 ```
 
@@ -31,12 +31,17 @@ pip install -r requirements.txt
 > **Note**: Rename `test.env` to `.env` and ensure PostgreSQL is running with credentials set correctly. If the `USE_POSTGRES` variable is set to `False`, the system will default to using a SQLite database.
 
 
+### 4. Navigate to project folder
+
+```bash
+cd solution
+```
+
 ### 4. Apply database migrations
 
 ```bash
 python manage.py migrate
 ```
-
 
 ## 🛠️ Usage
 
