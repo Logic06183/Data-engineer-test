@@ -1,14 +1,20 @@
 from django.db import models
 
-# Create your models here.
-
-class Climate_daily(models.Model):
-
-    title = models.CharField(max_length=100)
-    site_id = models.FloatField()
+class ClimateDaily(models.Model):
+    station_id = models.CharField(max_length=20)
     date = models.DateField()
-    daily_temp_c = models.FloatField()
-    precip_mm = models.IntegerField()
-    humidity_pct = models.IntegerField()
-    location_id = models.CharField(max_length=50)
+    temperature = models.FloatField()
+    rainfall = models.FloatField()
 
+class ClimateYearly(models.Model):
+    station_id = models.CharField(max_length=20)
+    year = models.IntegerField()
+    avg_temp = models.FloatField()
+    total_rainfall = models.FloatField()
+
+class ClinicalTrial(models.Model):
+    trial_id = models.CharField(max_length=50, unique=True)
+    title = models.TextField()
+    status = models.CharField(max_length=100)
+    start_date = models.DateField()
+    end_date = models.DateField(null=True, blank=True)
